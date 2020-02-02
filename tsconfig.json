@@ -1,0 +1,17 @@
+{
+  "include": ["src"],
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "declarationDir": "./dist",
+    "declaration": true,
+    "declarationMap": true,
+    "esModuleInterop": true,
+    "jsx": "react",
+    "lib": ["dom", "esnext"],
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "strict": true,
+    "target": "es5",
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "ts-declaration-map-repro",
+  "version": "0.8.0",
+  "description": "Repro for tsdx or rollup problem with declarationMap `sources` paths",
+  "author": "Justin Grant",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justingrant/ts-declaration-map-repro.git"
+  },
+  "scripts": {
+    "build": "yarn clean && yarn compile",
+    "clean": "rm -rf ./dist",
+    "with-tsc": "yarn clean && tsc",
+    "with-tsdx": "cross-env NODE_ENV=production tsdx build --format=esm"
+  },
+  "dependencies": {
+    "tslib": "1.10.0"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
+  },
+  "main": "dist/index.js",
+  "module": "dist/rect.esm.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "src",
+    "dist"
+  ],
+  "devDependencies": {
+    "@types/react": "^16.9.19",
+    "cross-env": "^7.0.0",
+    "tsdx": "^0.12.3"
+  }
+}
