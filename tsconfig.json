@@ -3,7 +3,6 @@
   "compilerOptions": {
     "rootDir": "./src",
     "outDir": "./dist",
-    "declarationDir": "./dist",
     "declaration": true,
     "declarationMap": true,
     "esModuleInterop": true,
@@ -12,6 +11,6 @@
     "moduleResolution": "node",
     "sourceMap": true,
     "strict": true,
-    "target": "es5",
+    "target": "es5"
   }
 }
